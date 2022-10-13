@@ -79,7 +79,7 @@
         </nav>
     </div>
     <div class="col-md-9 col-xs-12">
-        <h1 class="text-center text-info">GIỚI THIỆU NHÀ HÀNG</h1>
+        <h1 class="text-center text-info" style="padding-top: 15px">GIỚI THIỆU NHÀ HÀNG</h1>
         <div class="container">
             <div class="row">
                 <div class="col-md-5">

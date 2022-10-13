@@ -16,6 +16,7 @@ com\company\repository\ReceiptRepository.class
 com\company\pojo\Category_.class
 com\company\pojo\Menu_.class
 com\company\pojo\User_.class
+com\company\controllers\EmployeeRestaurantController.class
 com\company\pojo\Servicedetail.class
 com\company\service\impl\LobbyServiceImpl.class
 com\company\configs\WebAppContextConfig.class
@@ -45,6 +46,7 @@ com\company\service\RestaurantService.class
 com\company\handlers\LoginSuccessHandler.class
 com\company\pojo\Feedback_.class
 com\company\repository\impl\RestaurantRepositoryImpl.class
+com\company\controllers\ApiRestaurantController.class
 com\company\repository\UserRepository.class
 com\company\service\ServiceService.class
 com\company\controllers\UserController.class

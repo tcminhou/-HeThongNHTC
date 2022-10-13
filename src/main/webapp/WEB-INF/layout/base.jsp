@@ -15,8 +15,6 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <!--icon web-->
-        <link rel="icon"; href="https://res.cloudinary.com/tcmou/image/upload/v1662456519/restaurant-icon-vector-isolated-on-white-background-restaurant-sign-vector-id1029059560_ftfgc3.jpg" />
         <title><tiles:insertAttribute name="title" /></title>
         <!--css-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">

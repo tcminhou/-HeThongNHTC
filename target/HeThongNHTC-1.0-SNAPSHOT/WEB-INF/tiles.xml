@@ -23,6 +23,11 @@ Software Foundation//DTD Tiles Configuration 3.0//EN"
         <put-attribute name="content"
                        value="/WEB-INF/jsp/restaurantDetails.jsp" />
     </definition>
+     <definition name="addRestaurant" extends="baseLayout">
+        <put-attribute name="title" value="" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/addRestaurant.jsp" />
+    </definition>
     <!--sảnh-->
     <definition name="lobby" extends="baseLayout">
         <put-attribute name="title" value="" />
@@ -73,6 +78,14 @@ Software Foundation//DTD Tiles Configuration 3.0//EN"
         <put-attribute name="content"
                        value="/WEB-INF/jsp/register.jsp" />
     </definition>
+    
+    <!--duyệt nhà hàng-->
+    <definition name="approveRestaurant" extends="baseLayout">
+        <put-attribute name="title" value="" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/approveRestaurant.jsp" />
+    </definition>
+    
     <!--quản lý nhân viên-->
     <definition name="employee" extends="baseAdminLayout">
         <put-attribute name="title" value="Quản lý nhân viên" />

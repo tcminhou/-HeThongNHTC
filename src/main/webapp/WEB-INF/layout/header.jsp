@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="<c:url value="/" />">&#127758; Trang chủ</a>
+                    <a class="nav-link" href="<c:url value="/" />">&#127758; Trang chu</a>
                 </li>
                 
                 <sec:authorize access="!isAuthenticated()">
@@ -54,15 +54,15 @@
 <!--                <li class="nav-item">
                     <a class="nav-link text-info" href="<c:url value="/admin/stats" />">Quản trị hệ thống</a>
                 </li>-->
-                <li class="nav-item">
+    <li class="nav-item">
                         <a class="nav-link text-info" href="<c:url value="/cart" />">Giỏ Hàng</a>
-                </li>
+                    </li>
 
             </ul>  
             <c:url value="" var="action" />
             <form method="get" action="${action}" class="d-flex">
-                <input class="form-control me-2" name="kw" type="text" placeholder="Nhập từ khoá...">
-                <button type="submit" class="btn btn-primary" type="button">Tìm</button>
+                <input class="form-control me-2" name="kw" type="text" placeholder="Nhap tu khoa...">
+                <button type="submit" class="btn btn-primary" type="button">Tim</button>
             </form>
         </div>
     </div>

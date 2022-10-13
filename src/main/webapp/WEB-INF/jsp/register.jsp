@@ -7,7 +7,7 @@
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
-<h1 class="text-center text-danger" style="padding-top: 15px"> ĐĂNG KÝ </h1>
+<h1 class="text-center text-danger"> ĐĂNG KÝ </h1>
 
 <c:if test="${errMsg != null}">
     <div class="alert alert-danger">
@@ -29,7 +29,7 @@
     </div>
     <div class="form-group">
         <label for="email">Email</label>
-        <form:input type="email" id="email" path="email" class="form-control" />
+        <form:input type="text" id="email" path="email" class="form-control" />
 
     </div>
     <div class="form-group">

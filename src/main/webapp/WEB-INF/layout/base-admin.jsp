@@ -23,7 +23,7 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
     <body>
-        <h1 class="text-center text-info" style="padding-top: 15px">TRANG QUẢN TRỊ ADMIN</h1>
+        <h1 class="text-center text-info">TRANG QUẢN TRỊ ADMIN</h1>
 
         <div class="container">
             <div class="row">
@@ -35,9 +35,9 @@
                 </div>
 
             </div>
-        </div>
+
             <tiles:insertAttribute name="footer" />
-        
+        </div>
         <script src="<c:url value="/js/stats.js" />"></script>
     </body>
 </html>

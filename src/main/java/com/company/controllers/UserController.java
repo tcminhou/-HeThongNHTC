@@ -30,11 +30,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class UserController {
      @Autowired
     private UserService UserDetailsService;
-     
-    @GetMapping("/login")
-    public String login() {
-        return "login";
-    }
     
     @GetMapping("/register")
     public String registerView(Model model) {   

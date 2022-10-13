@@ -21,11 +21,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<c:url value="/" />">&#127758; Trang chủ</a>
                 </li>
-                
+
                 <sec:authorize access="!isAuthenticated()">
-                <li class="nav-item">
-                    <a class="nav-link text-info" href="<c:url value="/register" />">Đăng ký</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="<c:url value="/register" />">Đăng ký</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link text-info" href="<c:url value="/login" />">Đăng nhập</a>
                     </li>
@@ -42,20 +42,36 @@
                             (<sec:authentication property="principal.username" />)
                         </a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link text-danger" href="<c:url value="/logout" />">Đăng xuất</a>
                     </li>
                 </sec:authorize>
+
+                <!-- Phân quyền chủ nhà hàng -->
+                <sec:authorize access="hasRole('ROLE_OWNER')">
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="<c:url value="/restaurant/add" />">Đăng kí nhà hàng</a>
+                    </li>
+                </sec:authorize>
+
+                <!-- Phân quyền nhân viên -->
+                <sec:authorize access="hasRole('ROLE_EMPLOY')">
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="<c:url value="/employee/restaurants" />">Duyệt nhà hàng</a>
+                    </li>
+                </sec:authorize>
+
                 <sec:authorize access="hasRole('ROLE_ADMIN')">
                     <li class="nav-item">
                         <a class="nav-link text-info" href="<c:url value="/admin/stats" />">Quản trị hệ thống</a>
                     </li>
                 </sec:authorize>
-<!--                <li class="nav-item">
-                    <a class="nav-link text-info" href="<c:url value="/admin/stats" />">Quản trị hệ thống</a>
-                </li>-->
+                <!--                <li class="nav-item">
+                                    <a class="nav-link text-info" href="<c:url value="/admin/stats" />">Quản trị hệ thống</a>
+                                </li>-->
                 <li class="nav-item">
-                        <a class="nav-link text-info" href="<c:url value="/cart" />">Giỏ Hàng</a>
+                    <a class="nav-link text-info" href="<c:url value="/cart" />">Giỏ Hàng</a>
                 </li>
 
             </ul>  

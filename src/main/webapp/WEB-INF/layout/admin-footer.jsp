@@ -6,7 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!--footer-->
-<div class="alert alert-info" style="padding-left: 100px; margin-top: 15px">
+<div class="alert alert-info">
     <h1>Quản trị hệ thống NHTC</h1>
     <p>HTTN &copy; 2022</p>
 </div>

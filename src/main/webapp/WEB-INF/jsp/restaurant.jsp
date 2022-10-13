@@ -13,9 +13,18 @@
 
 
 <!--content-->
-<h1 class="text-center text-primary" style="padding: 15px">NHÀ HÀNG</h1>
+<h1 class="text-center text-primary">NHÀ HÀNG</h1>
 <div class="container">
-    
+    <!--phaan trang-->
+    <ul class="pagination">
+        <c:forEach begin="1" end="${Math.ceil(restaurantCounter/pageSize)}" var="i">
+            <c:url value="/" var="u" >
+                <c:param name="page" value="${i}" />
+
+            </c:url>
+            <li class="page-item"><a class="page-link" href="${u}">Trang ${i}</a></li>
+        </c:forEach>
+    </ul>
     <!--đổ danh sách sản phẩm ra--> 
     <div class="row">
         <c:forEach items="${restaurants}" var="p">
@@ -32,14 +41,5 @@
             </div>
         </c:forEach>
     </div>
-    <ul class="pagination">
-        <c:forEach begin="1" end="${Math.ceil(restaurantCounter/pageSize)}" var="i">
-            <c:url value="/" var="u" >
-                <c:param name="page" value="${i}" />
-
-            </c:url>
-            <li class="page-item"><a class="page-link" href="${u}">Trang ${i}</a></li>
-        </c:forEach>
-    </ul>
 </div>
 
